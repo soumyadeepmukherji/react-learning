@@ -8,6 +8,21 @@ import Card from './components/card'
 function App() {
   // State
   const [count, setCount] = useState(0) // value is count and methods is setCount
+  const [colour, setColour] = useState('blue')
+
+  const bgchange = (colour) => {
+    setColour(colour)
+  }
+
+  const randomBg = () => {
+    let r = Math.floor(Math.random() * 256)
+    let g = Math.floor(Math.random() * 256)
+    let b = Math.floor(Math.random() * 256)
+
+    const randomColour = `rgb(${r},${g},${b})`
+
+    setColour(randomColour)
+  }
 
   const increment = () => {
     setCount(count + 1)
@@ -31,6 +46,14 @@ function App() {
         />
         <Card />
       </div>
+
+      <section className='my-4 w-100% h-52 flex items-center justify-center' style={{backgroundColor: colour}}>
+            <div className='grid grid-cols-3 gap-4 w-80'>
+              <button className='p-4 bg-white rounded-full text-black' onClick={() => bgchange('red')}>Red</button>
+              <button className='p-4 bg-white rounded-full text-black' onClick={() => bgchange('green')}>Green</button>
+              <button className='p-4 bg-white rounded-full text-black' onClick={() => randomBg()}>Random</button>
+            </div>
+      </section>
     </>
   )
 }
