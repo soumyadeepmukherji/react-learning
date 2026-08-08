@@ -10,6 +10,31 @@ function App() {
 
   const sports = ["Cricket","Football","Basketball","Batminten","Chess"]
 
+  const userData = [
+    {
+      id: 101,
+      name: 'Srikanth',
+      age: 23,
+    },
+    {
+      id: 102,
+      name: 'Swati',
+      age: 21,
+    },
+    {
+      id: 103,
+      name: 'Rahul',
+      age: 28,
+    },
+    {
+      id: 104,
+      name: 'Kunal',
+      age: 20,
+    }
+  ]
+
+  console.log(userData)
+
   return (
     <>
         <h1>Mulyiple Conditions</h1>
@@ -35,6 +60,27 @@ function App() {
 
         <section>
           <Form />
+        </section>
+
+        <section>
+          <table>
+            <thead>
+              <tr>
+              <th>ID</th>
+              <th>NAME</th>
+              <th>AGE</th>
+              </tr>
+            </thead>
+            <tbody>
+              {userData.map((data,index) => (
+                <tr key={index}>
+                  <td>{data.id}</td>
+                  <td>{data.name}</td>
+                  <td>{data.age}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </section>
     </>
   )

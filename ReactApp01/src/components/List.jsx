@@ -1,5 +1,4 @@
 function List({list}){
-    console.log({list})
     return(
         <>
         <h2>List of Sports</h2>
