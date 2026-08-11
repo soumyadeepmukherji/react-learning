@@ -3,6 +3,7 @@ import './App.css'
 import User from './components/User'
 import List from './components/list'
 import Form from './components/Form'
+import Life from './components/classBaseLifeCycle'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,7 +34,7 @@ function App() {
     }
   ]
 
-  console.log(userData)
+  // console.log(userData)
 
   return (
     <>
@@ -81,6 +82,10 @@ function App() {
               ))}
             </tbody>
           </table>
+        </section>
+
+        <section>
+          <Life />
         </section>
     </>
   )
