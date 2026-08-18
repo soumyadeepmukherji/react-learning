@@ -4,6 +4,7 @@ import User from './components/User'
 import List from './components/list'
 import Form from './components/Form'
 import Life from './components/classBaseLifeCycle'
+import States from './components/states'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -86,6 +87,10 @@ function App() {
 
         <section>
           <Life />
+        </section>
+
+        <section>
+          <States />
         </section>
     </>
   )
