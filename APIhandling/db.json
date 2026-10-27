@@ -1,0 +1,41 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Srikanth",
+      "email": "srikanth@gmail.com",
+      "phone": 8977564391
+    },
+    {
+      "name": "test",
+      "email": "test@gmail.com",
+      "phone": "9876564567",
+      "id": "vjFBeU95BUs"
+    },
+    {
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "phone": "9878987898",
+      "id": "MNE2LEYgzQ4"
+    },
+    {
+      "name": "vaisnav",
+      "email": "visanav@gmail.com",
+      "phone": "9876543234",
+      "id": "lo6GnHpQ1Lw"
+    },
+    {
+      "name": "test2",
+      "email": "test@2.com",
+      "phone": "123456789",
+      "id": "HwqMTGDU4e8"
+    },
+    {
+      "name": "test3",
+      "email": "test@3.com",
+      "phone": "987654321",
+      "id": "aZ7LA215wAo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

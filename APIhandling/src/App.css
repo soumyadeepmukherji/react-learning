@@ -1,0 +1,6 @@
+.formwrap{
+  max-width: 400px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
